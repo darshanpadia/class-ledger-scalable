@@ -1,4 +1,4 @@
-from config import Config, basedir
+from .base import Config, basedir
 import os
 
 

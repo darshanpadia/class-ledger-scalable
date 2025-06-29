@@ -1,4 +1,4 @@
-from config import Config
+from .base import Config
 import os
 
 class ProductionConfig(Config):
