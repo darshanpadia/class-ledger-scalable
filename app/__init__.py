@@ -1,12 +1,6 @@
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
-from flask_wtf.csrf import CSRFProtect
 from app.config import DevelopmentConfig
-
-db = SQLAlchemy()
-migrate = Migrate()
-csrf = CSRFProtect()
+from app.extensions import db, migrate, csrf
 
 def create_app(config_class=DevelopmentConfig):
     app = Flask(__name__)
