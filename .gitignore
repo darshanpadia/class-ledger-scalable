@@ -7,7 +7,7 @@ instance/
 *.sqlite3
 class-ledger.db
 
-migrations/versions/
+
 structure.txt
 
 *__pycache__

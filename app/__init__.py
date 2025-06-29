@@ -11,4 +11,9 @@ def create_app(config_class=DevelopmentConfig):
     migrate.init_app(app,db)
     csrf.init_app(app)
 
+    # Import models *after* db is initialized
+    from app.models import Teacher
+
+    # Blueprints here
+
     return app
