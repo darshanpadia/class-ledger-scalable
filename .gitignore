@@ -1,0 +1,10 @@
+venv/
+*.env
+*.flaskenv
+
+instance/
+
+*.sqlite3
+class-ledger.db
+
+migrations/versions/

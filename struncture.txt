@@ -1,0 +1,24 @@
+.
+├── app/
+│   ├── __init__.py
+│   ├── auth/
+│   │   ├── __init__.py
+│   │   ├── routes.py
+│   │   ├── forms.py
+│   │   └── services.py
+│   ├── common/
+│   │   ├── db.py
+│   │   ├── models.py
+│   │   └── utils.py
+│   ├── records/
+│   │   ├── __init__.py
+│   │   ├── routes.py
+│   │   ├── forms.py
+│   │   ├── services.py
+│   │   └── models.py
+├── app.py
+├── config.py
+├── run.py
+├── instance/
+│   └── config.py
+├── migrations/
