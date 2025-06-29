@@ -1,9 +1,12 @@
 from flask import Flask
 from app.config import DevelopmentConfig
 from app.extensions import db, migrate, csrf
+import os
 
-def create_app(config_class=DevelopmentConfig):
+def create_app():
     app = Flask(__name__)
+
+    config_class = os.environ.get("CONFIG_CLASS", "config.development.DevelopmentConfig")
     app.config.from_object(config_class)
 
     # Initialize extentions
