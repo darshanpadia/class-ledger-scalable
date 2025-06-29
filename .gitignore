@@ -8,3 +8,6 @@ instance/
 class-ledger.db
 
 migrations/versions/
+structure.txt
+
+*__pycache__
