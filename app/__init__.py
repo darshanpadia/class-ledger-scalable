@@ -13,7 +13,7 @@ def create_app(config_class):
     csrf.init_app(app)
 
     # Import models *after* db is initialized
-    from app.models import Teacher
+    from app.auth import models as auth_models
 
     # Blueprints here
 
