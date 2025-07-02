@@ -1,3 +1,6 @@
+## 🗂️ Project Structure
+
+```
 class-ledger-flask/
 ├── .env-sample
 ├── .gitignore
@@ -46,3 +49,4 @@ class-ledger-flask/
 │   └── dashboard_templates/
 │       └── home.html
 └── wsgi.py
+```
