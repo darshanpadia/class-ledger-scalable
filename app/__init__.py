@@ -14,7 +14,11 @@ def create_app(config_class):
 
     # Import models *after* db is initialized
     from app.models import Teacher
+    from app.auth.routes import auth_bp
+    from app.dashboard.routes import dashboard_bp
 
     # Blueprints here
+    app.register_blueprint(auth_bp)
+    app.register_blueprint(dashboard_bp)
 
     return app
